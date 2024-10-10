@@ -44,74 +44,75 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8">
                     <h2 class="text-start">Contact Us</h2>
+                    {{-- <a href="{{ route('user.form.show', ['id' => $form->id]) }}" class="badge rounded-pill text-bg-primary">Check your form</a> --}}
                     <form action="{{ route('user.form.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="std_image">Student Image (optional):</label>
+                                <label class="mt-3" for="std_image">Student Image (optional):</label>
                                 <input type="file" class="form-control" name="std_image" id="std_image">
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="first_name">First Name:</label>
+                                <label class="mt-3" for="first_name">First Name:</label>
                                 <input type="text" class="form-control" name="first_name" id="first_name"
                                     placeholder="Your First Name" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="last_name">Last Name:</label>
+                                <label class="mt-3" for="last_name">Last Name:</label>
                                 <input type="text" class="form-control" name="last_name" id="last_name"
                                     placeholder="Your Last Name" required>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="father_name">Father's Name:</label>
+                                <label class="mt-3" for="father_name">Father's Name:</label>
                                 <input type="text" class="form-control" name="father_name" id="father_name"
                                     placeholder="Your Father's Name" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="email">Email:</label>
+                                <label class="mt-3" for="email">Email:</label>
                                 <input type="email" class="form-control" name="email" id="email"
                                     placeholder="Your Email" required>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="class">Class:</label>
+                                <label class="mt-3" for="class">Class:</label>
                                 <input type="number" class="form-control" name="class" id="class"
                                     placeholder="Your Class" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="school_name">School Name:</label>
+                                <label class="mt-3" for="school_name">School Name:</label>
                                 <input type="text" class="form-control" name="school_name" id="school_name"
                                     placeholder="Your School Name" required>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="phone">Phone:</label>
+                                <label class="mt-3" for="phone">Phone:</label>
                                 <input type="text" class="form-control" name="phone" id="phone"
                                     placeholder="Your Phone Number" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="city">City:</label>
+                                <label class="mt-3" for="city">City:</label>
                                 <input type="text" class="form-control" name="city" id="city" placeholder="Your City"
                                     required>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="age">Age:</label>
+                                <label class="mt-3" for="age">Age:</label>
                                 <input type="number" class="form-control" name="age" id="age" placeholder="Your Age"
                                     required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="Dob">Date of Birth:</label>
+                                <label class="mt-3" for="Dob">Date of Birth:</label>
                                 <input type="date" class="form-control" name="Dob" id="Dob" required>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="gender">Gender:</label>
+                                <label class="mt-3" for="gender">Gender:</label>
                                 <select name="gender" id="gender" class="form-control" required>
                                     <option value="">Select Gender</option>
                                     <option value="male">Male</option>
@@ -120,16 +121,16 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="address">Address:</label>
-                            <textarea name="address" id="address" class="form-control w-50" placeholder="Your Address"
+                        <div class="form-group col-md-8">
+                            <label class="mt-3" for="address">Address:</label>
+                            <textarea name="address" id="address" class="form-control" placeholder="Your Address"
                                 required></textarea>
                         </div>
-                        <div class="form-group form-check">
+                        <div class="form-group form-check mt-3 mb-3">
                             <input type="checkbox" class="form-check-input" name="agree" id="agree" value="1" required>
-                            <label class="form-check-label" for="agree">I agree to the terms and conditions</label>
+                            <label class="" class="form-check-label" for="agree">I agree to the terms and conditions</label>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
                     </form>
                 </div>
                 <div class="col-lg-4 col-md-4">

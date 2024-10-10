@@ -38,7 +38,7 @@ class AuthenticatedSessionController extends Controller
             return redirect()->intended('/user/dashboard'); // User dashboard
         }
 
-        return redirect()->intended($url);
+        return redirect()->intended(default: $url);
     }
 
     /**

@@ -21,4 +21,5 @@ class UserController extends Controller
         // Pass the fetched data to the view
         return view('user.dashboard', compact('faqs', 'courseCategories'));
     }
+
 }

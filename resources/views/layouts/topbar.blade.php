@@ -27,9 +27,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('user.form.create') }}">Form</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Admin</a>
-                </li>
             </ul>
             <div class="nav-item d-flex justify-content-end">
                 <h4 class="tw-light text-secondary">Education First</h4>

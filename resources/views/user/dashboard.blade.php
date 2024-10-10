@@ -69,6 +69,12 @@
         @include('layouts.topbar');
         {{-- Navbar for user end --}}
         <!-- Main Content -->
+        <script type="text/javascript">
+            window.history.pushState(null, "", window.location.href);
+            window.onpopstate = function() {
+                window.history.pushState(null, "", window.location.href);
+            };
+        </script>
         <div class="py-4">
             <div class="container">
                 <div class="row justify-content-center">
@@ -149,7 +155,7 @@
         {{-- FAQ end --}}
         {{-- Quotes section start --}}
         <div class="container py-5">
-            <h2 class="mb-4">Famous Quotes for students</h2>
+            <h2 class="mb-4 text-center">Famous Quotes for students</h2>
             <div id="quoteCarousel" class="carousel slide">
                 <div class="carousel-inner">
                     <!-- Quote 1 -->
@@ -195,6 +201,7 @@
         @include('layouts.footer')
 
     </x-app-layout>
+    <!-- Your page content -->
     {{-- yahan maine script tag hata diya tou dropdown wala masla resolve hogaya --}}
 </body>
 

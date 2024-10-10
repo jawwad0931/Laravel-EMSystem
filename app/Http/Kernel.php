@@ -14,6 +14,10 @@ class Kernel extends HttpKernel
      * @var array<int, class-string|string>
      */
     protected $middleware = [
+        // =====================================yeh register warwa rahe hain view =================================
+        'noback' => \App\Http\Middleware\Noback::class,
+        // 'validlogin' => \App\Http\Middleware\Validlogin::class,
+         // =====================================yeh register warwa rahe hain view ================================
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
         \Illuminate\Http\Middleware\HandleCors::class,
@@ -65,5 +69,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'role' => \App\Http\Middleware\Role::class,
+        'noback' => \App\Http\Middleware\Noback::class,
+        'validlogin' => \App\Http\Middleware\ValidLogin::class,
     ];
 }
