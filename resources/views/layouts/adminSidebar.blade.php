@@ -6,7 +6,7 @@
         <div class="">
             <!-- Logo section -->
             {{-- <img src="" alt="" /> --}}
-            <h4>Student Management</h4>
+            <h4><span class="text-danger">Hello</span> {{ Auth::user()->name }}</h4>
         </div>
 
         <div class="close" id="close-btn">
