@@ -26,7 +26,7 @@ class AdminCourseCategoryController extends Controller
         if($request->hasFile('CourseIcon')){
             $image = $request->file('CourseIcon');
             $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('public/course_category'), $imageName);
+            $image->move(public_path('course_category'), $imageName);
             $validated['CourseIcon'] = $imageName;
         }
 

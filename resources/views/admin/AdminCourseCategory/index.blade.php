@@ -110,9 +110,9 @@
                             <tbody>
                                 @foreach($course_categories as $course_category)
                                     <tr>
-                                        {{-- <img src="{{ dd(asset('storage/upload/' . $course_category->CourseIcon)) }}" alt="Course Icon"> --}}
+                                        {{-- <img src="{{ dd(asset('storage/upload' . $course_category->CourseIcon)) }}" alt="Course Icon"> --}}
                                         <td>
-                                            <img src="{{ asset('public/course_category' . $course_category->CourseIcon) }}" alt="Course Icon" class="rounded-circle" style="height: 25px; width: 25px; object-fit: cover;">
+                                            <img src="{{ asset('course_category/' . $course_category->CourseIcon) }}" alt="Course Icon" class="rounded-circle" style="height: 25px; width: 25px; object-fit: cover;">
                                         </td>
                                         <td>{{ $course_category->CourseName }}</td>
                                         <td>{{ $course_category->CourseDescription }}</td>
